@@ -4,6 +4,8 @@ import random
 import re
 from datetime import datetime, timedelta
 
+import config
+import db
 from aiogram import Bot, Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
@@ -12,9 +14,6 @@ from aiogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
                            ReplyKeyboardMarkup, ReplyKeyboardRemove)
 from aiogram.types.message import ContentType
 from aiogram.utils.markdown import hbold
-
-import config
-import db
 from config import logger
 
 API_TOKEN = config.TOKEN

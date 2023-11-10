@@ -1,12 +1,12 @@
+import db
 from aiogram import Bot, Router
 from aiogram.filters import Command, CommandObject
 from aiogram.types import Message
-
-from keyboards import main as kb
 from config import logger
-import db
-from bot import escape_special_characters as md_edit
+from keyboards import main as kb
 from message_templates import main as msg
+
+from bot import escape_special_characters as md_edit
 
 
 async def check_and_send_events():

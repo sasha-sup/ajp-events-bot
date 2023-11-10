@@ -6,7 +6,6 @@ import config
 import db
 from config import logger
 
-
 dirs_created = False
 
 def create_content_dirs():

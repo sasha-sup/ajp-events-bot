@@ -4,6 +4,7 @@ from aiogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
                            ReplyKeyboardMarkup, ReplyKeyboardRemove)
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
+
 def subscription():
     builder = InlineKeyboardBuilder()
     options = ["", "", "", ""] # OPTION HERE~ BELT DIVISON GENDER ETC

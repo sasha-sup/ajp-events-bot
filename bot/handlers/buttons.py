@@ -1,11 +1,10 @@
-from aiogram import Router, F
-from aiogram.types import Message
-
 import db
+from aiogram import F, Router
+from aiogram.types import Message
 from config import logger
+from handlers.commands import cmd_help
 from keyboards import main as kb
 from message_templates import main as msg
-from handlers.commands import cmd_help
 
 router = Router()
 

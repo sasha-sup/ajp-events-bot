@@ -2,13 +2,13 @@ import asyncio
 import os
 import re
 
-from aiogram import Bot, Dispatcher
-
 import config
 import db
-from config import logger
-from handlers import commands, buttons
+from aiogram import Bot, Dispatcher
 from callbacks import callbacks
+from config import logger
+from handlers import buttons, commands
+
 
 async def log_dir():
     try:

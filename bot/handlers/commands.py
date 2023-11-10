@@ -1,8 +1,7 @@
+import db
 from aiogram import Router
 from aiogram.filters import Command, CommandObject
 from aiogram.types import Message
-
-import db
 from config import logger
 from keyboards import main as kb
 from message_templates import main as msg
