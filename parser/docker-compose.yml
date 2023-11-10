@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  notifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "ajp-parser"
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - /var/log/parser:/app/log:rw
+    network_mode: host
+

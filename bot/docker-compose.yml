@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  notifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "ajp-bot"
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - /var/log/ajpbot:/app/log:rw
+    network_mode: host

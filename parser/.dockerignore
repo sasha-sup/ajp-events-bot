@@ -1,0 +1,21 @@
+.env
+
+# Python-specific
+*-venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+log
+
+
+# yaml
+*.yaml
+*.yml
+
+
+# Docker-specific
+.DS_Store
+.dockerignore
+cron

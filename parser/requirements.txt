@@ -1,0 +1,5 @@
+beautifulsoup4==4.9.3
+asyncpg==0.28.0
+asyncio==3.4.3
+aiohttp==3.8.5
+uvloop==0.17.0
