@@ -1,12 +1,11 @@
 from aiogram import F, Router
 from aiogram.types import CallbackQuery
 from aiogram.utils.callback_answer import CallbackAnswer
+from bot import escape_special_characters as md_edit
 from config import logger
 from db import fetch_events
 from keyboards import main as kb
 from message_templates import main as msg
-
-from bot import escape_special_characters as md_edit
 
 router = Router()
 
